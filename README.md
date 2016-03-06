@@ -92,7 +92,7 @@ server {
         # cat /etc/php/7.0/fpm/pool.d/www.conf | grep "^listen "
         #
         #fastcgi_pass 127.0.0.1:9001;
-        fastcgi_pass unix:/var/run/php7.0-fpm.sock;
+        fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
         
         fastcgi_index index.php;
         include fastcgi_params;
